@@ -13,7 +13,7 @@ object Main {
 
     val attr = new Attribute("Attr1","attr_type","AttrVal")
 
-    entity.attributes += attr
+    entity.attributes.add(attr)
 
     try {
       session.save(entity)
