@@ -18,7 +18,7 @@ class Entity {
   var sourceId: String = _
 
   @Relationship(`type` = "HAS", direction = "OUTGOING")
-  var attributes: Set[Attribute] = Set()
+  var attributes: java.util.Set[Attribute] = new java.util.HashSet()
 
   def this(name: String, sourceId: String) {
     this()
